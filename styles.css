@@ -8,6 +8,7 @@
 header {
     background-color: #1f2937;
     padding: 0 200px;
+    width: 100%;
 }
 
 header nav {
@@ -31,14 +32,95 @@ header nav ul {
 }
 
 header nav ul li a {
-    color: #E5E7EB;
+    color: #d6d9df;
     text-decoration: none;
     font-size: 14px;
+}
+
+header #header-container {
+    display: flex;
+    height: 400px;
+}
+
+header #header-container #head-left {
+    flex: 1;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header #header-container #head-left h1 {
+    color: #F9FAF8;
+    font-size: 48px;
+}
+
+header #header-container #head-left p {
+    font-size: 18px;
+    color: #d6d9df;
+    padding: 15px 0;
+}
+
+header #header-container #head-left button {
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: #3882F6;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+header #header-container #head-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header #header-container #head-right img{
+    width: 500px;
+    height: 240px;
+    border: 1px dotted white;
 }
 
 main {
     padding: 0 200px;
 }
+
+main #cards-container {
+    height: 400px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+main #cards-container h2 {
+    font-size: 28px;
+}
+
+main #cards-container #cards {
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+main #cards-container #cards .card {
+    width: 200px;
+    height: 230px;
+    border-radius: 8px;
+}
+
+main #cards-container #cards .card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+}
+
+main #cards-container #cards .card p {
+    padding: 5px 0;
+}
+
 
 
 footer {
